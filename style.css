@@ -1,1 +1,408 @@
-/* Add you CSS here */
+/* Basic Reset: Remove default spacing from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: Set default font and background color */
+body {
+  font-family: 'Gravitas One', serif; /* Changed to Gravitas One for all text */
+  background-color: #f5f5dc; /* Beige/cream background */
+  color: #2c2c2c; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+/* Headings: Apply Alfa Slab One font to all headings */
+h1, h2 {
+  font-family: 'Alfa Slab One', serif; /* Custom font for h1 and h2 headings */
+  letter-spacing: 2px; /* Adds space between letters */
+}
+
+/* H3 Headings: Apply Gravitas One font */
+h3 {
+  font-family: 'Gravitas One', serif; /* Gravitas One font for h3 headings */
+  letter-spacing: 2px; /* Adds space between letters */
+}
+
+/* Navigation Bar: Fixed menu at the top */
+nav {
+  background-color: #1a3a2a; /* Dark forest green */
+  position: fixed; /* Stays at top when scrolling */
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Appears above other content */
+}
+
+/* Navigation List: Remove bullet points and center items */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Navigation List Items: Display side by side */
+nav li {
+  display: inline; /* Makes list items horizontal */
+  margin: 0 20px;
+}
+
+/* Navigation Links: Style the clickable links */
+nav a {
+  color: #f5f5dc; /* Cream color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Navigation Links Hover: Change color when mouse hovers */
+nav a:hover {
+  color: #8fbc8f; /* Light green on hover */
+}
+
+/* Hero Section: Large welcome area with background image */
+#hero {
+  background-image: url('img/IMG_6755.jpeg');
+  background-size: cover; /* Image covers entire section */
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  display: flex; /* Helps center content */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  text-align: center;
+  margin-top: 50px; /* Space for fixed navigation */
+}
+
+/* Hero Content: Container for hero text */
+.hero-content {
+  background-color: rgba(26, 58, 42, 0.8); /* Semi-transparent dark green */
+  padding: 40px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Hero Heading: Large title text */
+.hero-content h1 {
+  font-size: 48px;
+  color: #f5f5dc; /* Cream color */
+  margin-bottom: 10px;
+}
+
+/* Hero Paragraph: Subtitle text */
+.hero-content p {
+  font-size: 24px;
+  color: #d2b48c; /* Tan color */
+}
+
+/* Bio Section: About me area */
+#bio {
+  background-color: #0d1f17; /* Darker green background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Bio Container: Dark forest green rectangle with soft edges */
+.bio-container {
+  background-color: #1a3a2a; /* Dark forest green */
+  border: 4px solid #064635; /* Dark emerald green border */
+  border-radius: 20px; /* Soft rounded edges */
+  padding: 40px;
+  max-width: 1200px; /* Made bigger (was 1000px) */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Bio Heading: Section title */
+#bio h2 {
+  font-size: 36px;
+  color: #f5f5dc; /* Cream color for contrast */
+  margin-bottom: 20px; /* Less space below heading */
+}
+
+/* Bio Content: Container for image and text side by side */
+.bio-content {
+  display: flex; /* Places items side by side */
+  max-width: 900px;
+  margin: 0 auto; /* Centers the container */
+  text-align: left; /* Aligns text to the left */
+  gap: 30px; /* Space between image and text */
+  align-items: center; /* Centers text vertically with image */
+}
+
+/* Profile Picture: Square image with rounded edges */
+.profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px; /* Rounded corners instead of circle */
+  border: 5px solid #8b4513; /* Brown border */
+  object-fit: cover; /* Keeps image proportions without squishing */
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Bio Text: Container for paragraphs on the right */
+.bio-text {
+  flex: 1; /* Takes up remaining space */
+}
+
+/* Bio Paragraphs: Text content */
+#bio p {
+  margin: 15px 0; /* Space between paragraphs */
+  font-size: 18px;
+  color: #f5f5dc; /* Cream color for readability on dark background */
+}
+
+/* Skills Section: Area for skill boxes */
+#skills {
+  background-color: #0d1f17; /* Darker green background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Skills Container: Dark forest green rectangle with soft edges */
+.skills-outer-container {
+  background-color: #4682B4; /* Darker blue background (steel blue) */
+  border: 4px solid #064635; /* Dark emerald green border */
+  border-bottom: 40px solid #064635; /* Thinner emerald green bottom border (was 100px) */
+  border-radius: 20px; /* Same rounded edges all around */
+  padding: 40px; /* Padding on all sides */
+  padding-bottom: 0; /* Remove bottom padding so ground touches bottom edge */
+  max-width: 1200px; /* Made bigger (was 1000px) */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Skills Heading: Section title */
+#skills h2 {
+  font-size: 36px;
+  color: #1a3a2a; /* Changed to dark green for contrast on sky blue */
+  margin-bottom: 40px;
+}
+
+/* Skills Container: Holds all skill boxes */
+.skills-container {
+  max-width: 1000px; /* Increased from 900px to fit all 4 trees side by side */
+  margin: 0 auto; /* Centers the container */
+  padding-bottom: 0; /* Remove padding so ground touches trees */
+}
+
+/* Ground Rectangle: Emerald green rectangle under all trees */
+.ground {
+  background-color: #064635; /* Dark emerald green */
+  height: 40px; /* Smaller height (was 100px) */
+  width: calc(100% + 80px); /* Extends beyond container to edges */
+  margin-left: -40px; /* Pulls left to container edge */
+  margin-right: -40px; /* Pulls right to container edge */
+  margin-top: 0; /* No space - touches tree trunks */
+  margin-bottom: 0; /* No bottom margin */
+  border-radius: 0; /* No rounded corners - straight edges */
+}
+
+/* Skill Tree: Individual skill box styled like a tree */
+.skill-tree {
+  display: inline-block; /* Changed back to inline-block for horizontal layout */
+  width: 200px;
+  margin: 15px 15px 0 15px; /* Removed bottom margin (was 15px all around) */
+  padding: 0; /* Remove padding since we'll style inner parts */
+  text-align: center;
+  position: relative; /* Allows positioning of branches */
+}
+
+/* Tree Foliage: Cloud-like green shape containing text */
+.tree-foliage {
+  background-color: #6b8e6b; /* Medium green (tree foliage) */
+  border: 3px solid #1a3a2a; /* Dark green border */
+  border-radius: 50px; /* Very rounded to create cloud-like shape */
+  padding: 30px 20px; /* Space inside the cloud */
+  margin-bottom: 0; /* No space - trunk touches foliage */
+  position: relative; /* Allows branches to connect */
+}
+
+/* Tree Trunk: Brown rectangle at bottom */
+.tree-trunk {
+  background-color: #8b4513; /* Brown color for trunk */
+  width: 40px; /* Narrow trunk */
+  height: 80px; /* Taller trunk to extend into ground (was 60px) */
+  margin: 0 auto; /* Centers the trunk */
+  border-radius: 5px 5px 0 0; /* Rounded top corners only, flat bottom to blend with ground */
+  position: relative; /* Allows positioning of branches */
+  display: flex; /* Helps center the logo */
+  align-items: center; /* Centers logo vertically */
+  justify-content: center; /* Centers logo horizontally */
+}
+
+/* Trunk Logo: Text or symbol on the trunk */
+.trunk-logo {
+  color: #f5f5dc; /* Cream color for contrast */
+  font-size: 20px; /* Bigger size for emojis (was 12px) */
+  font-weight: bold; /* Makes text stand out */
+  z-index: 10; /* Appears above branches */
+  text-align: center; /* Centers text */
+  line-height: 1.2; /* Tighter line spacing */
+}
+
+/* Branch Left: Left branch connecting trunk to foliage */
+.branch-left {
+  position: absolute; /* Positioned relative to trunk */
+  top: 10px; /* Position near top of trunk (where it meets foliage) */
+  left: -20px; /* Extends to the left */
+  width: 30px; /* Branch length */
+  height: 6px; /* Branch thickness */
+  background-color: #8b4513; /* Brown color */
+  transform: rotate(30deg); /* Angles downward to the left (flipped) */
+  border-radius: 3px; /* Rounded ends */
+}
+
+/* Branch Right: Right branch connecting trunk to foliage */
+.branch-right {
+  position: absolute; /* Positioned relative to trunk */
+  top: 10px; /* Position near top of trunk (where it meets foliage) */
+  right: -20px; /* Extends to the right */
+  width: 30px; /* Branch length */
+  height: 6px; /* Branch thickness */
+  background-color: #8b4513; /* Brown color */
+  transform: rotate(-30deg); /* Angles downward to the right (flipped) */
+  border-radius: 3px; /* Rounded ends */
+}
+
+/* Skill Tree Heading: Skill name */
+.skill-tree h3 {
+  color: #f5f5dc; /* Cream color */
+  font-size: 18px; /* Smaller font size (was 22px) */
+  margin-bottom: 10px;
+  letter-spacing: 3px; /* More space between letters */
+}
+
+/* Skill Tree Paragraph: Skill description */
+.skill-tree p {
+  color: #f5f5dc; /* Cream color */
+  font-size: 14px;
+  font-family: 'Gravitas One', serif; /* Gravitas One font for skill descriptions */
+}
+
+/* Projects Section: Area for project showcase */
+#projects {
+  background-color: #0d1f17; /* Darker green background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Projects Container: Dark forest green rectangle with soft edges */
+.projects-container {
+  background-color: #1a3a2a; /* Dark forest green */
+  border: 4px solid #064635; /* Dark emerald green border */
+  border-radius: 20px; /* Soft rounded edges */
+  padding: 40px;
+  max-width: 1200px; /* Same size as other sections */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Projects Heading: Section title */
+#projects h2 {
+  font-size: 36px;
+  color: #f5f5dc; /* Cream color for contrast */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Coming Soon Message: Placeholder text */
+.coming-soon {
+  font-size: 24px;
+  color: #d2b48c; /* Tan color */
+  font-style: italic; /* Makes text italic */
+  margin: 40px 0; /* Space above and below */
+}
+
+/* Interests Section: Area for hobbies and passions */
+#interests {
+  background-color: #0d1f17; /* Darker green background */
+  padding: 40px 20px; /* Reduced vertical padding (was 60px) */
+  text-align: center;
+}
+
+/* Interests Container: Dark forest green rectangle with soft edges */
+.interests-container {
+  background-color: #1a3a2a; /* Dark forest green */
+  border: 4px solid #064635; /* Dark emerald green border */
+  border-radius: 20px; /* Soft rounded edges */
+  padding: 30px; /* Reduced padding (was 40px) */
+  max-width: 1200px; /* Same size as other sections */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Interests Heading: Section title */
+#interests h2 {
+  font-size: 36px;
+  color: #f5f5dc; /* Cream color for contrast */
+  margin-bottom: 15px; /* Reduced space below heading (was 20px) */
+}
+
+/* Interests Content: Container for images and text side by side */
+.interests-content {
+  display: flex; /* Places images and text side by side */
+  max-width: 900px;
+  margin: 0 auto; /* Centers the container */
+  text-align: left; /* Aligns text to the left */
+  gap: 30px; /* Space between images and text */
+  align-items: center; /* Centers content vertically */
+}
+
+/* Interests Images: Container for overlapping images */
+.interests-images {
+  position: relative; /* Allows positioning of images */
+  width: 350px; /* Reduced width (was 500px) */
+  height: 350px; /* Reduced height (was 500px) */
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+/* Interest Picture: Individual image styling */
+.interest-pic {
+  width: 180px; /* Smaller width (was 250px) */
+  height: 180px; /* Smaller height (was 250px) */
+  border-radius: 15px; /* Rounded corners */
+  border: 5px solid #8b4513; /* Brown border */
+  object-fit: cover; /* Keeps image proportions without squishing */
+  position: absolute; /* Back to absolute for corner overlap */
+}
+
+/* First Interest Picture: Bottom layer */
+.interest-pic-1 {
+  top: 0; /* Position at top */
+  left: 0; /* Position at left */
+  z-index: 1; /* Bottom layer */
+}
+
+/* Second Interest Picture: Middle layer with corner overlap */
+.interest-pic-2 {
+  top: 30px; /* Adjusted for smaller size (was 40px) */
+  left: 165px; /* Adjusted for smaller size (was 230px) */
+  z-index: 2; /* Middle layer - appears above first image */
+}
+
+/* Third Interest Picture: Top layer with corner overlap */
+.interest-pic-3 {
+  top: 165px; /* Adjusted for smaller size (was 230px) */
+  left: 85px; /* Adjusted for smaller size (was 115px) */
+  z-index: 3; /* Top layer - appears above other images */
+}
+
+/* Interests Text: Container for text paragraphs */
+.interests-text {
+  flex: 1; /* Takes up remaining space */
+}
+
+/* Interests Paragraphs: Text content */
+#interests p {
+  margin: 10px 0; /* Reduced margin (was 15px) */
+  font-size: 18px;
+  color: #f5f5dc; /* Cream color for readability on dark background */
+}
+
+/* Footer: Bottom section with contact information */
+footer {
+  background-color: #1a3a2a; /* Dark forest green to match navigation */
+  padding: 20px; /* Space around the content */
+  text-align: center; /* Centers the text */
+}
+
+/* Footer Paragraph: Contact text styling */
+footer p {
+  color: #f5f5dc; /* Cream color for readability */
+  font-size: 16px; /* Standard text size */
+  margin: 0; /* Remove default margin */
+}

@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/9cc0b4570a.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <title>My Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gravitas+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +16,8 @@
       <li><a href="#hero">Home</a></li>
       <li><a href="#bio">About Me</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
     </ul>
   </nav>
 
@@ -23,48 +29,109 @@
     </div>
   </section>
 
-  <!-- Divider: Dark emerald green space between sections -->
-  <div class="section-divider"></div>
-
   <!-- Bio Section: Information about you -->
   <section id="bio">
-    <div class="bio-content">
+    <div class="bio-container">
       <h2>About Me</h2>
-      <img src="img/P1010710.jpeg" alt="Profile picture" class="profile-pic">
-      <div class="bio-text">
-        <p>
-          Hello! My name is Raul Pulido. I am an undergraduate at the Cockrell School of Engineering at the University of Texas at Austin. I'm currently enrolled in a course on web development and learning to build amazing websites. 
-          I'm passionate about creating clean and user-friendly websites and learning new technologies. This portfolio showcases the projects I've built during my journey into web development.
-        </p>
+      <div class="bio-content">
+        <img src="img/P1010710.jpeg" alt="Profile picture" class="profile-pic">
+        <div class="bio-text">
+          <p>
+            Hello! My name is Raul Pulido. I am an undergraduate at the Cockrell School of Engineering at the University of Texas at Austin. I'm currently enrolled in a course on web development and learning to build amazing websites. 
+            I'm passionate about creating clean and user-friendly websites and learning new technologies. This portfolio showcases the projects I've built during my journey into web development.
+          </p>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- Divider: Dark emerald green space between sections -->
-  <div class="section-divider"></div>
 
   <!-- Skills Section: Your web development skills displayed as tree boxes -->
   <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-      <!-- Each skill is a tree-themed box -->
-      <div class="skill-tree">
-        <h3>HTML</h3>
-        <p>Building webpage structure</p>
+    <div class="skills-outer-container">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <!-- Each skill is a tree-themed box -->
+        <div class="skill-tree">
+          <div class="tree-foliage">
+            <h3>HTML</h3>
+            <p>Building webpage structure</p>
+          </div>
+          <div class="tree-trunk">
+            <i class="fa-brands fa-html5 fa-xl" style="color: #3d2a0a;"></i>
+            <div class="branch-left"></div>
+            <div class="branch-right"></div>
+          </div>
+        </div>
+        <div class="skill-tree">
+          <div class="tree-foliage">
+            <h3>CSS</h3>
+            <p>Styling and layout design</p>
+          </div>
+          <div class="tree-trunk">
+            <i class="fa-brands fa-css3-alt fa-xl" style="color: #3d2a0a;"></i>
+            <div class="branch-left"></div>
+            <div class="branch-right"></div>
+          </div>
+        </div>
+        <div class="skill-tree">
+          <div class="tree-foliage">
+            <h3>Git</h3>
+            <p>Version control</p>
+          </div>
+          <div class="tree-trunk">
+            <i class="fa-brands fa-github fa-xl" style="color: #3d2a0a;"></i>
+            <div class="branch-left"></div>
+            <div class="branch-right"></div>
+          </div>
+        </div>
+        <div class="skill-tree">
+          <div class="tree-foliage">
+            <h3>Problem Solving</h3>
+            <p>Debugging and troubleshooting</p>
+          </div>
+          <div class="tree-trunk">
+            <i class="fa-regular fa-lightbulb fa-xl" style="color: #3d2a0a;"></i>
+            <div class="branch-left"></div>
+            <div class="branch-right"></div>
+          </div>
+        </div>
       </div>
-      <div class="skill-tree">
-        <h3>CSS</h3>
-        <p>Styling and layout design</p>
-      </div>
-      <div class="skill-tree">
-        <h3>Git</h3>
-        <p>Version control</p>
-      </div>
-      <div class="skill-tree">
-        <h3>Problem Solving</h3>
-        <p>Debugging and troubleshooting</p>
+      <!-- Ground: Emerald green rectangle representing ground under trees -->
+      <div class="ground"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section: Showcase of your work -->
+  <section id="projects">
+    <div class="projects-container">
+      <h2>My Projects</h2>
+      <p class="coming-soon">Projects coming soon...</p>
+    </div>
+  </section>
+
+  <!-- Interests Section: Information about your hobbies and passions -->
+  <section id="interests">
+    <div class="interests-container">
+      <h2>My Interests</h2>
+      <div class="interests-content">
+        <!-- Images on the left side with overlap -->
+        <div class="interests-images">
+          <img src="img/P1110054.jpeg" alt="Friends" class="interest-pic interest-pic-1">
+          <img src="img/P1110220.jpeg" alt="Vinyl collecting" class="interest-pic interest-pic-2">
+          <img src="img/IMG_2348.jpeg" alt="Music and dancing" class="interest-pic interest-pic-3">
+        </div>
+        <!-- Text on the right side -->
+        <div class="interests-text">
+          <p>
+            Outside of coding, I love to hang out with my friends and family.
+            Music is a huge part of who I am, and I love collecting vinyls and discovering new artists across different genres. However, my favorite will always be rock n roll. I also love to dance, so you will often catch me at a local line dancing venue when I am free. I also enjoy playing soccer.
+          </p>
+        </div>
       </div>
     </div>
   </section>
+  <footer>
+    <p>Contact: rp39343@my.utexas.edu</p>
+  </footer>
 </body>
 </html>
